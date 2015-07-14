@@ -43,18 +43,21 @@ var path = {
 };
 
 var config = {
-  server: {
-    baseDir: "./build"
-  },
-  tunnel: true,
-  host: 'localhost',
-  port: 9000,
-  logPrefix: "Frontend_Kater-auf-dem-Dach"
+    server: {
+        baseDir: "./build"
+    },
+    tunnel: true,
+    host: 'localhost',
+    port: 9000,
+    logPrefix: "Frontend_Devil"
 };
 
+gulp.task('webserver', function () {
+    browserSync(config);
+});
 
 gulp.task('clean', function (cb) {
-  rimraf(path.clean, cb);
+    rimraf(path.clean, cb);
 });
 
 gulp.task('html:build', function () {
@@ -74,6 +77,15 @@ gulp.task('style:build', function () {
       .pipe(gulp.dest(path.build.css)) //И в build
       .pipe(reload({stream: true}));
 });
+
+gulp.task('styles', function() {
+    gulp.src(['src/css/styles.css'])
+        .pipe(prefixer()) //Добавим вендорные префиксы
+        .pipe(cssmin()) //Сожмем
+        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(reload({stream: true}));
+})
+
 
 gulp.task('js:build', function () {
   gulp.src(path.src.js) //Найдем наш main файл
@@ -109,6 +121,9 @@ gulp.task('watch', function(){
   watch([path.watch.style], function(event, cb) {
     gulp.start('style:build');
   });
+    watch(['src/css/styles.css'], function(event, cb) {
+        gulp.start('styles');
+    });
   watch([path.watch.js], function(event, cb) {
     gulp.start('js:build');
   });
@@ -129,7 +144,7 @@ gulp.task('build', [
   'clean',
   'html:build',
   'js:build',
-  'style:build',
+  'styles',
   'fonts:build',
   'image:build'
 ]);

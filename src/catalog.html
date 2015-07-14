@@ -1,171 +1,185 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nёrds</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nёrds</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 
-    <!--header start-->
-    <header class="header __cat">
-        <div class="wrapper">
-            <div class="top-bar  row">
-                <div class="logo  col s__1-3">
-                    <a href="index.html"><img src="img/logo.png" height="56" width="139" alt="nerds"></a>
-                </div>
-                <div class="col s__2-3">
-                    <ul class="menu__main">
-                        <li><a class="menu__main_lk  __active" href="#">Студия</a></li>
-                        <li><a class="menu__main_lk" href="#">Клиенты</a></li>
-                        <li><a class="menu__main_lk" href="#">Магазин</a></li>
-                        <li><a class="menu__main_lk" href="#">Контакты</a></li>
-                        <li><a class="menu__main_lk  __cart" href="#"><i class="icon-basket"></i>Корзина</a></li>
-                    </ul>
-                </div>
-            </div>
-           <h1 class="t__big">Добро пожаловать в магазин  готовых макетов</h1>
+  <!--header start-->
+  <header class="header __cat">
+    <div class="wrapper">
+      <div class="top-bar  row">
+        <div class="logo  col s__1-3">
+          <a href="index.html"><img src="img/logo.png" height="56" width="139" alt="nerds">
+          </a>
         </div>
-    </header>
-    <!--header end-->
-
-    <!--content start-->
-    <div class="wrapper row">
-        <!--sidebar start-->
-        <aside class="filters col s__1-3">
-            <div class="heading-small">Фильтр:</div>
-
-                    <h2 class="heading-medium">Цена:</h2>
-                    <div class="filters-price">
-                        <div class="controls-range">
-                            <div class="scale">
-                                <div class="bar" style="width:80%;"></div>
-                            </div>
-                            <div class="toggle toggle-min"></div>
-                            <div class="toggle toggle-max"></div>
-                        </div>
-                        <div class="control-text">
-                            <input id="min-price" type="text" value="0">
-                            <label class="min-price" for="min-price"></label>
-                            <div class="dash"></div>
-                            <input class="max-price" id="max-price" type="text" value="30 000">
-                            <label class="max-price" for="max-price"></label>
-                        </div>
-                    </div>
-
-                    <h2 class="filters-heading heading-medium">Производители:</h2>
-                    <form action="/echo" class="form-producer" method="post">
-                        <input checked id="bosh" name="bosh" type="checkbox">
-                        <label for="bosh">bosh</label>
-                        <input id="interskol" name="interskol" type="checkbox">
-                        <label for="interskol">interskol</label>
-                        <input checked id="makita" name="makita" type="checkbox">
-                        <label for="makita">makita</label>
-                        <input id="dewalt" name="dewalt" type="checkbox">
-                        <label for="dewalt">dewalt</label>
-                        <input id="hitachi" name="hitachi" type="checkbox">
-                        <label for="hitachi">hitachi</label>
-                    </form>
-
-                    <h2 class="filters-heading heading-medium">Питание:</h2>
-                    <form action="/echo" class="form-suply" method="post">
-                        <input checked id="battery" name="suply" type="radio" value="battery">
-                        <label for="battery">Аккумуляторные</label>
-                        <input id="power" name="suply" type="radio" value="power">
-                        <label for="power">Сетевые</label>
-                    </form>
-                    <a class="btn-show" href="#">Показать</a>
-        </aside>
-        <!--sidebar end-->
-
-
-
-        <!--catalog start-->
-        <main class="catalog  col s__2-3">
-            <div class="row">
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/aviator.jpg" alt="aviator" class="template"></a>
-                </div>
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/sun.jpg" alt="sun" class="template"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/forte.jpg" alt="forte" class="template"></a>
-                </div>
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/marquee.jpg" alt="marquee" class="template"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/avenue.jpg" alt="avenue" class="template"></a>
-                </div>
-                <div class="col s__1-3">
-                    <a href="#" class="catalog__item"><img src="img/dovetail.jpg" alt="dovetail" class="template"></a>
-                </div>
-            </div>
-        </main>
-        <!--catalog end-->
+        <div class="col s__2-3">
+          <ul class="menu__main">
+            <li><a class="menu__main_lk  __active" href="#">Студия</a>
+            </li>
+            <li><a class="menu__main_lk" href="#">Клиенты</a>
+            </li>
+            <li><a class="menu__main_lk" href="#">Магазин</a>
+            </li>
+            <li><a class="menu__main_lk" href="#">Контакты</a>
+            </li>
+            <li><a class="menu__main_lk  __cart" href="#"><i class="icon-basket"></i>Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h1 class="t__big">Добро пожаловать в магазин  готовых макетов</h1>
     </div>
-    <!--content end-->
+  </header>
+  <!--header end-->
 
-    <!--map start-->
-    <section class="map row">
-        <div class="wrapper">
-            <div  class="col s__1-3 address">
-                <h2 class="t__small">NЁRDS DESIGN STUDIO</h2>
-                <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-                <p> тел. +7 (812) 275-75-75</p>
-                <a href="#" class="btn __color-1">Заказать</a>
-            </div>
-            <img class="to-right" src="img/logo-map.png" alt="nerds">
+  <!--content start-->
+  <div class="wrapper row">
+    <!--sidebar start-->
+    <aside class="filters col s__1-3">
+
+      <h2 class="form__title  form__title--price">Стоимость:</h2>
+      <div class="filters-price">
+        <div class="controls-range">
+          <div class="scale">
+            <div class="bar" style="width:80%;"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
         </div>
-    </section>
-    <!--map end-->
-
-    <!--footer start-->
-    <footer class="footer__main">
-        <div class="wrapper">
-            <div class="row">
-                <div class="share  col s__1-3">
-                    <a href="#" class="social"><i class="icon-vk"></i></a>
-                    <a href="#" class="social"><i class="icon-facebook"></i></a>
-                    <a href="#" class="social"><i class="icon-instagramm"></i></a>
-                </div>
-                <div class="col s__2-3">
-                    <h2 class="t__medium">Давайте дружить, это выгодно!</h2>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
-                </div>
-            </div>
+        <div class="control-text">
+          <input id="min-price" type="text" value="0">
+          <label class="min-price" for="min-price"></label>
+          <div class="dash"></div>
+          <input class="max-price" id="max-price" type="text" value="30 000">
+          <label class="max-price" for="max-price"></label>
         </div>
-    </footer>
-    <!--footer end-->
+      </div>
+
+      <h2 class="form__title  form__title--grid">Сетка:</h2>
+      <form action="/echo" class="form-item  form__grid" method="post">
+        <input checked id="adaptive" name="grid" type="radio">
+        <label for="adaptive">Адаптивная</label>
+        <input id="fix" name="grid" type="radio">
+        <label for="fix">Фиксированная</label>
+        <input checked id="flexible" name="grid" type="radio">
+        <label for="flexible">Резиновая</label>
+      </form>
+
+      <h2 class="form__title  form__title--features">Особенности:</h2>
+      <form action="/echo" class="form-item  form__features" method="post">
+        <input id="slider" name="slider" type="checkbox" checked>
+        <label for="slider">Слайдер</label>
+        <input id="features" name="features" type="checkbox">
+        <label for="features">Блок преимуществ</label>
+        <input id="news" name="makita" type="checkbox" checked>
+        <label for="news">Новости</label>
+        <input id="gallery" name="gallery" type="checkbox">
+        <label for="gallery">Галерея</label>
+        <input id="cart" name="makita" type="checkbox">
+        <label for="cart">Корзина</label>
+      </form>
+      <a class="btn-show" href="#">Показать</a>
+    </aside>
+    <!--sidebar end-->
 
 
-    <!--feedback form start-->
-    <div class="feedback modal-content">
-        <div class="feedback-wrapper">
-            <div class="modal-close">закрыть</div>
-            <form class="feedback-form" action="/echo" method="post">
-                <label class="to-left" for="name">Ваше имя:
-                  <input id="name" name="name" placeholder="Представьтесь, пожалуйста" type="text">
-                </label>
-                <label class="to-right" for="email">Ваш e-mail:
-                  <input id="email" name="email" placeholder="Для отправки ответа" type="email">
-                </label>
-                  <label for="letter">Текст письма:
-                <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
-                  </label>
-            </form>
-            <button type="submit" class="btn __color-1  to-left">Отправить</button>
-            <button type="reset" class="btn __color-4  to-right">Отмена</button>
+
+    <!--catalog start-->
+    <main class="catalog  col s__2-3">
+      <div class="row">
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/aviator.jpg" alt="aviator" class="template">
+          </a>
         </div>
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/sun.jpg" alt="sun" class="template">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/forte.jpg" alt="forte" class="template">
+          </a>
+        </div>
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/marquee.jpg" alt="marquee" class="template">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/avenue.jpg" alt="avenue" class="template">
+          </a>
+        </div>
+        <div class="col s__1-3">
+          <a href="#" class="catalog__item"><img src="img/dovetail.jpg" alt="dovetail" class="template">
+          </a>
+        </div>
+      </div>
+    </main>
+    <!--catalog end-->
+  </div>
+  <!--content end-->
+
+  <!--map start-->
+  <section class="map row">
+    <div class="wrapper">
+      <div class="col s__1-3 address">
+        <h2 class="t__small">NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p> тел. +7 (812) 275-75-75</p>
+          <a href="#" class="btn __color-1">Заказать</a>
+      </div>
+      <img class="to-right" src="img/logo-map.png" alt="nerds">
     </div>
-    <!--feedback form end-->
+  </section>
+  <!--map end-->
+
+  <!--footer start-->
+  <footer class="footer__main">
+    <div class="wrapper">
+      <div class="row">
+        <div class="share  col s__1-3">
+          <a href="#" class="social"><i class="icon-vk"></i></a>
+          <a href="#" class="social"><i class="icon-facebook"></i></a>
+          <a href="#" class="social"><i class="icon-instagramm"></i></a>
+        </div>
+        <div class="col s__2-3">
+          <h2 class="t__medium">Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
+
+
+  <!--feedback form start-->
+  <div class="feedback modal-content">
+    <div class="feedback-wrapper">
+      <div class="modal-close">закрыть</div>
+      <form class="feedback-form" action="/echo" method="post">
+        <label class="to-left" for="name">Ваше имя:
+          <input id="name" name="name" placeholder="Представьтесь, пожалуйста" type="text">
+        </label>
+        <label class="to-right" for="email">Ваш e-mail:
+          <input id="email" name="email" placeholder="Для отправки ответа" type="email">
+        </label>
+        <label for="letter">Текст письма:
+          <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+        </label>
+      </form>
+      <button type="submit" class="btn __color-1  to-left">Отправить</button>
+      <button type="reset" class="btn __color-4  to-right">Отмена</button>
+    </div>
+  </div>
+  <!--feedback form end-->
 </body>
+
 </html>
