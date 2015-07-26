@@ -47,7 +47,17 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
-node_modules
-build
 
+build/
+_psd/
+!src/
+
+node_modules/
+
+# bem and libs
+libs/
+.bem/cache/
+*.bundles*/*/*.*
+!*.bundles*/*/*.bemjson.js
+!*.bundles*/.bem/*
 

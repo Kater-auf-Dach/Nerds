@@ -1,0 +1,14 @@
+{
+  "author": "Kater-auf-Dach",
+  "name": "Nerds",
+  "email": "kateraufdach@yandex.ru",
+  "version": "0.0.0",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-components": "v2.2.1"
+  }
+}
